@@ -24,3 +24,16 @@ void input() {		//prosedur untuk input
 		cout << "data ke-" << (i + 1) << ": ";	//output ke layar
 		cin >> a[i];							//input dari pengguna
 	}
+}
+void bubbleSortArray() {					//prosedur untuk mengurutkan array dengan metodde bubblesort
+	for (int i = 1; i < n; i++) {			//looping dengan i dimulai dari 1 hingga n-1
+		for (int j = 0; j = n - i; j++) {	//looping dengan j dimulai dari 0 hingga n-1
+			if (a[j] > a[j + 1]) {			//jika nilai pada a[j] lebuuh besar dari a[j+1] 
+				int temp = a[j];			//simpan nilai a[j] ke variabel smentara temp
+				a[j] = a[j + 1];			//assign nilai a[a+1] ke a[j]
+				a[j + 1] = temp;			//assign nilai tetap ke a[j+1]
+			}
+		}
+	}
+}
+
